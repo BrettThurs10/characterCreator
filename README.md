@@ -12,3 +12,5 @@ My code knows if you've been assigned as a male or female. It assigns your first
 Culture
 The also knows what race you are and assigns the appropriate homeland and name to you (it'd be weird if you were a human named Robert Redford from the Misty Mountains).
 
+See demo here http://dapperdesign.me/charactercreator
+
