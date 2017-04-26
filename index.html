@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ye Olde Character Creator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Roboto:300,500,900|Covered+By+Your+Grace|Aladin" rel="stylesheet">
+    <meta property="og:image" content="img/yeolde_meta.jpg" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="contents">
+            <h3>Ye Olde</h3>
+            <h1>Character Creator</h1>
+            <div class="copy">
+                <div id="parentStatDiv">
+                    <div class="stat">
+                          <number class="statNumber">
+                        </number><br> STR
+                    </div>
+                    <div class="stat">
+                      <number class="statNumber">
+                        </number><br> DEX
+                    </div>
+                    <div class="stat">
+                          <number class="statNumber">
+                        </number><br> CON
+                    </div>
+                    <div class="stat">
+                        <number class="statNumber">
+
+                        </number><br> INT
+                    </div>
+                    <div class="stat">
+                        <number class="statNumber">
+
+                        </number><br> WIS
+                    </div>
+                    <br style="clear: left;" />
+                </div>
+                <p>
+                    <div id="characterGen"></div>
+                </p>
+            </div>
+            <button class="button" onclick="reload()">Roll Another Character</button>
+        </div>
+        <div class="outline">
+            <a onclick="printMe()">
+
+                <strong>You can print this page.</strong></a><br>I'm designed to be easy on the inkjet.
+            <br><br>
+            <button id="toggleList" class="medium">Show Dev Notes</button>
+            <div class="list">
+                This simple fantasy character generator was made with JavaScript.
+                <br><br>
+                <strong>Roll The Dice</strong><br> I've generated the skill numbers for each by rolling four 6 sided die and taking the best value, of the four dice.
+                <br><br>
+                <strong>Who Are You?</strong><br> My code knows if you've been assigned as a male or female. It assigns your first name to reflect your gender. Last names are shared by both genders.
+                <br><br>
+                <strong>Culture</strong><br> The also knows what race you are and assigns the appropriate homeland and name to you (it'd be weird if you were a human named Robert Redford from the Misty Mountains).
+            </div>
+        </div>
+
+        <div class="code">
+            <a href="http://dapperdesign.me/charactercreator/js/characterGenerator_1.0.js" target="_blank">Click to see the JavaScript code here.</a>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/characterGenerator_1.0.js"></script>
+</body>
+
+</html>
