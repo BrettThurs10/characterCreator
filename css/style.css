@@ -39,12 +39,12 @@ h3 {
 
 
 a:link, a:active, a:visited {
-  color: red;
+  color: silver;
   text-decoration: none;
 }
 
 a:hover {
-  color: silver;
+  color: grey;
   text-decoration: none;
   cursor: pointer;
 }
@@ -113,8 +113,8 @@ p {
   margin: auto;
   margin-top: 30px;
   padding: 10px 20px;
-  background-color: white;
   width: 50%;
+  font-size: small;
 }
 
 .stat {
@@ -140,7 +140,9 @@ p {
   margin-bottom: 1em;
 }
 .button:hover {
-  background-color: #ccc;
+  background-color: transparent;
+  border: 2px dashed white;
+  color: white;
 }
 .outline {
   border: 2px dashed white;
