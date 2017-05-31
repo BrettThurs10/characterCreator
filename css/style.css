@@ -246,12 +246,12 @@ line-height: 0;
   }
 
   .copy {
-    padding-top: 0px;
+    padding-top: 0;
   }
 
   .outline {
     width: 80%;
-    padding: 2em 2em 2em 2em;
+    padding: 2em;
     font-size: 2em;
     font-weight: 400;
     display: none;
@@ -265,7 +265,7 @@ line-height: 0;
 
   .button {
     font-size: 1em;
-    paddng: 1em;
+    padding: 1em;
     margin-bottom: 20px;
   }
 
