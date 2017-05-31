@@ -168,86 +168,6 @@ parentStatDiv {
   width: 550px;
 }
 
-
-/* Portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  body {
-    opacity: .9;
-    margin-bottom: 100px;
-  }
-
-  h1 {
-    font-size: 3em;
-    padding-bottom:1em;
-  }
-
-  h2 {
-    font-size: 20em;
-    height: 360px;
-  }
-
-  p {
-    font-size: 3.5em;
-  }
-
-  parentStatDiv {
-    width: 100%;
-
-  }
-
-  .container {
-    width: 100%;
-    margin: auto;
-  }
-
-  .copy {
-    padding-top: 0px;
-  }
-
-  .outline {
-    width: 80%;
-    padding: 2em 2em 2em 2em;
-    font-size: 2em;
-    font-weight: 400;
-    display: none;
-  }
-
-  .code {
-    width: 80%;
-    font-size: 2em;
-    margin-top: 20px;
-  }
-
-  .button {
-    font-size: 3em;
-    paddng: 1em;
-    margin-bottom: 20px;
-  }
-
-  .bio {
-    font-size: 3.5em;
-  }
-
-  .stat {
-    float: left;
-    width: 16%;
-    border: 3px solid white;
-    padding: 18px 10px 30px 10px;
-    margin-right:8px;
-    border-radius: 5px;
-    font-weight: 900;
-    line-height: 50px;
-    text-align: center;
-    font-size: 40px;
-  }
-
-  number {
-    font-size: 70px;
-    line-height: 1;
-  }
-
-}
-
 /* Print Page */
 @media print {
   body {
@@ -286,4 +206,83 @@ parentStatDiv {
   .code {
     display: none;
   }
+}
+
+/* Portrait */
+@media (max-width: 600px) {
+  body {
+    opacity: .9;
+    margin-bottom: 100px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+    padding-bottom: 1.7em;
+line-height: 0;
+  }
+
+  h2 {
+    font-size: 3em;
+    height: 360px;
+  }
+
+  h3 {
+    font-size: 5em;
+    height: auto;
+  }
+
+  p, .bio {
+    font-size: 1em;
+  }
+
+  #parentStatDiv {
+    width: 100%;
+
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .copy {
+    padding-top: 0px;
+  }
+
+  .outline {
+    width: 80%;
+    padding: 2em 2em 2em 2em;
+    font-size: 2em;
+    font-weight: 400;
+    display: none;
+  }
+
+  .code {
+    width: 80%;
+    font-size: .8em;
+    margin-top: 20px;
+  }
+
+  .button {
+    font-size: 1em;
+    paddng: 1em;
+    margin-bottom: 20px;
+  }
+
+  .stat {
+    float: left;
+    border: 2px solid white;
+    padding: 4px;
+    border-radius: 5px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  number {
+    font-size: medium;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+  }
+
 }
