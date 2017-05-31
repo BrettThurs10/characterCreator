@@ -15,15 +15,15 @@ h1 {
   opacity: 0.8;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
 }
 
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 180px;
-  font-style: bold;
-  margin: 0px;
-  padding-bottom: 0px;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 0;
   height: 240px;
   text-align: center;
   opacity: 0.8;
@@ -32,7 +32,7 @@ h2 {
 h3 {
   font-family: 'Aladin', cursive;
   font-size: 180px;
-  margin: 0px;
+  margin: 0;
   height: 180px;
 }
 
@@ -49,8 +49,6 @@ a:hover {
   cursor: pointer;
 }
 
-
-}
 b {
   opacity: 1;
   font-weight: 400;
@@ -61,13 +59,13 @@ p {
   font-weight: 300;
   text-align: left;
 }
-a.footer {
-  white
+.footer {
+  color: white;
 }
 
 #bio {
   position: absolute;
-  left: 0%;
+  left: 0;
   width: 50%;
   height: 100%;
 }
@@ -104,7 +102,7 @@ a.footer {
 }
 
 .bio {
-  font-size: large;
+  font-size: x-large;
 }
 
 .bodycopy {
@@ -168,40 +166,6 @@ parentStatDiv {
   width: 550px;
 }
 
-/* Print Page */
-@media print {
-  body {
-    color: black;
-  }
-
-  h3 {
-    font-size: 80px;
-    height: 78px;
-  }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  p {
-    font-size: large;
-    line-height: 1.5;
-    font-weight: 300;
-    text-align: left;
-  }
-
-  .button {
-    display: none;
-  }
-
-  .outline {
-    display: none;
-  }
-
-  .code {
-    display: none;
-  }
-}
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -243,6 +207,7 @@ parentStatDiv {
     padding: 2em 2em 2em 2em;
     font-size: 2em;
     font-weight: 400;
+    display: none;
   }
 
   .code {
@@ -258,7 +223,7 @@ parentStatDiv {
   }
 
   .bio {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
 
   .stat {
@@ -279,4 +244,44 @@ parentStatDiv {
     line-height: 1;
   }
 
+}
+
+/* Print Page */
+@media print {
+  body {
+    color: black;
+    background: transparent;
+  }
+
+.stat {
+  border: 1px solid black;
+}
+
+  h3 {
+    font-size: 80px;
+    height: 78px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  p, .bio {
+    font-size: small;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: left;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .outline {
+    display: none;
+  }
+
+  .code {
+    display: none;
+  }
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ye Olde Character Creator</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Roboto:300,500,900|Covered+By+Your+Grace|Aladin" rel="stylesheet">
+  <meta property="og:image" content="img/yeolde_meta.jpg" />
+  <script type="text/javascript" src="js/program_v2.js"></script>
+  </head>
+<body>
+<div class="container">
+<div class="contents">
+  <h3>Ye Olde</h3> <h1>Character Creator</h1>
+<div class="copy">
+        <div id="parentStatDiv">
+            <div class="stat">
+                <number><script type="text/javascript">document.write(roll(4))</script></number><br>
+                STR
+            </div>
+            <div class="stat">
+                <number><script type="text/javascript">document.write(roll(4))</script></number><br>
+                DEX
+            </div>
+            <div class="stat">
+                <number><script type="text/javascript">document.write(roll(4))</script></number><br>
+                CON
+            </div>
+            <div class="stat">
+                <number> <script type="text/javascript">document.write(roll(4))</script></number><br>
+                INT
+              </div>
+              <div class="stat">
+                <number><script type="text/javascript">document.write(roll(4))</script></number><br>
+                WIS
+              </div>
+              <br style="clear: left;" />
+        </div>
+    <p> <script type="text/javascript"> document.write(characterGen())</script></p>
+</div>
+<button class="button" onclick="reload()">Roll Another Character</button>
+</div>
+  <div class="outline"> <a onclick="printMe()"><strong>You can also print this page.</strong></a><br>I'm designed to be easy on the inkjet.
+  </div>
+    <div class ="code">
+   <a href="#" target="_blank">Source code coming soon!</a>
+      </div>
+  </div>
+  </div>
+</body>
+</html>
